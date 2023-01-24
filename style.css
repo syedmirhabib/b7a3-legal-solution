@@ -1,54 +1,25 @@
-* {
-    font-family: "EB Garamond", serif;
-  }
-  
-  .img-1 {
-    background-image: url(images/banner.png), url(images/gr.png);
-    background-blend-mode: hue;
-    height: 50vh;
-    background-repeat: repeat-x;
-  }
-  
-  .accordion-item,
-  .accordion-header {
-    background-color: #f3f3f3 !important;
-    border: none !important;
-    padding: 0 !important;
-  }
-  
-  .accordion-button {
-    width: 100%;
-    height: 60px;
-    color: #000 !important;
-    font-weight: bold !important;
-    text-align: bold !important;
-    text-decoration: none !important;
-  
-    padding-bottom: 5em;
-    background-color: #f3f3f3 !important;
-  }
-  
-  .accordion-body {
-    background-color: #f3f3f3 !important;
-  }
-  
-  @media (max-width: 576px) {
-    .carousel-caption {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .carousel-caption h5 {
-      font-size: 7px;
-      margin-left: 5px;
-    }
-    .carousel-caption p {
-      font-size: 7px;
-      margin-left: 5px;
-    }
-    .carousel-caption h4 {
-      font-size: 7px;
-      margin-left: 5px;
-    }
-  }
-  
+.body {
+    font-family: 'EB Garamond', serif !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'EB Garamond', serif !important;
+}
+
+p {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.my_btn {
+    background-color: #B68C5A !important;
+    color: white !important;
+}
+.my_btn2 {
+    background-color: #B68C5A !important;
+    color: white !important;
+    padding: 5px 10px!important;
+    margin-left: -30px!important;
+    border-color: white!important;
+}
