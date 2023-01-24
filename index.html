@@ -69,58 +69,63 @@
                 </li>
                 </ul>
             </div>
-            <button class="btn btn-warning" type="submit">Free Consultation</button>
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Free Consultation
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Free Consultation</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Fill out the form below to schedule your free consultation.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
             </div>
         </nav>
         <!-- banner -->
-        <div class="container mx-auto">
-            <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            >
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <div
-                    class="img-1 d-flex justify-content-center align-items-center"
-                >
-                    <div class="">
-                    <h1 class="text-white text-center fw-bolder display-3">
-                        We Provide Effective <br />
-                        Legal Solutions
-                    </h1>
-                    <p class="text-white text-center mt-4">
-                        The Jurisconsults & Legal Solutions (JLS) is a
-                        multi-discipline law firm in Bangladesh. While maintaining
-                        our commitments to our clients, <br />
-                        we have built a reputation fr our expertise, specialised
-                        solutions and the ability to provide prompt services to our
-                        clients.
-                    </p>
-                    <form class="d-flex mx-auto w-75" role="search">
-                        <input
-                        class="form-control me-3"
-                        type="search"
-                        placeholder="Search your services"
-                        aria-label="Search"
-                        />
-                        <button class="btn btn-primary" type="submit">
-                        Search
-                        </button>
-                    </form>
+        <section class=" pt-5 pb-5 mt-0 align-items-center d-flex bg-dark"
+            style="min-height: 70vh; background-size: cover; background-position: center; background-repeat: no-repeat;  border-radius:5px; background-image: url('images/banner.png');">
+            <div class="container-fluid">
+                <div class="row  justify-content-center align-items-center text-center d-flex  h-100 ">
+                    <div class="col-12 col-md-6  h-50 ">
+                        <h1 class="display-4  text-light mb-2 mt-5"><strong>We Provide Effective Legal
+                                Solutions</strong>
+                        </h1>
+                        <p class="text-light mb-5">There are many variations of passages of Lorem Ipsum available, but
+                            the
+                            majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="btn-container-wrapper p-relative d-block  zindex-1">
+                            <form class="form-inline d-flex justify-content-center h-25">
+                                <input class="form-control  form-control me-3 mb-3" placeholder="Search Your Services">
+                                <button class="btn btn-primary btn-round btn-lg mb-3">Search</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                </div>
             </div>
-            </div>
-        </div>
+        </section>
     </header>
     
 
      <!-- **Main** -->
     <main>
         <!-- *main* Legal Practice **S-1** -->
-        <section>
+        <section class="pt-5 pb-5">
             <div class="container mx-auto mt-5">
                 <h2 class="text-center fw-bolder">The Legal Practice Area</h2>
                 <p  class="text-center">Navigate the legal system with ease. Our experienced attorneys specialize in a wide range of practice areas to protect your rights and interests.</p>
@@ -261,7 +266,7 @@
         </button>
     </div>
     
-    <div class="carousel-inner">
+    <div class="carousel-inner my-slider">
         <!-- Carousel First Item -->
     <div class="carousel-item active">
         
@@ -342,150 +347,245 @@
       </div>
     </div>
     <!-- Carousel prev-next control -->
-    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
-      data-mdb-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
-      data-mdb-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
   </div>
   <!-- Carousel wrapper -->
 </div>
         </section>
         <!-- *main* FAQ **S-3** -->
-        <section>
-            <div class="container mx-auto mt-5">
-            <h2 class="text-center fw-bolder">Frequently Asked Any Questions</h2>
-        <p class="text-center">Get quick answers to commonly asked legal questions. Our FAQs cover a wide range of topics to help you better understand your rights and options.</p>
-        <div class="row">
-        <!-- FAQ Two Columns -->
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <!-- FAQ Accordion -->
-              <div class="col">
-                <div class="accordion" id="accordionPanelsStayOpenExample">
-                    <!-- first accordion item -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            What is the statute of limitations for filing a lawsuit?
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                        <div class="accordion-body">
-                            The statute of limitations is the time period within which a person must file a lawsuit. The time period varies depending on the type of case and the jurisdiction. It's important to be aware of the statute of limitations for your case so you don't miss the deadline to file.
-                        </div>
-                      </div>
-                    </div>
-                    <!-- second accordion item -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                            What is the difference between a misdemeanor and a felony?
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="accordion-body">
-                         Misdemeanors are less serious crimes that are punishable by a fine or a maximum of one year in jail. Felonies, on the other hand, are more serious crimes that are punishable by more than one year in prison. The specific penalties will vary depending on the jurisdiction and the specific crime.
-                        </div>
-                      </div>
-                    </div>
-                    <!-- third accordion item -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                            What are my rights if I am stopped by the police?
-                        </button>
-                      </h2>
-                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                        <div class="accordion-body">
-                          If you are stopped by the police, you have the right to remain silent and the right to an attorney. You should not resist arrest, but you should assert your rights by stating that you wish to remain silent and that you wish to have an attorney present during any questioning.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <!-- FAQ Picture -->
-              <div class="col">
-                <img src="images/main-img/s-3 faq.png" class="col-md-6 float-md-end mb-3 ms-md-3 " alt="...">
-              </div>
+        <section class="container pb-5 px-3 bg-secondary-subtle rounded">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center pt-5 pb-3">
+                        Frequently Asked Any Questions
+                    </h2>
+                    <p class="text-center mb-5">
+                        Get quick answers to commonly asked legal questions. Our FAQs cover a wide range <br> of topics to help you better understand your rights and options.
+                    </p>
+                </div>
             </div>
-          </div>
-        </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col ">
+                    <div class="accordion" id="accordionExample">
+
+                    <!-- first accordion item -->
+                        <div class="accordion-item my-4">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button py-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1.Are application fee waivers available?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until
+                                    the
+                                    collapse
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control
+                                    the
+                                    overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                    modify
+                                    any of this
+                                    with custom CSS or overriding our default variables. It's also worth noting that
+                                    just
+                                    about
+                                    any HTML
+                                    can go within the <code>.accordion-body</code>, though the transition does limit
+                                    overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- second accordion item -->
+                        <div class="accordion-item border-top my-4">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2.Are application fee waivers available?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the collapse
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control
+                                    the
+                                    overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                    modify
+                                    any of this
+                                    with custom CSS or overriding our default variables. It's also worth noting that
+                                    just
+                                    about
+                                    any HTML
+                                    can go within the <code>.accordion-body</code>, though the transition does limit
+                                    overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- third accordion item -->
+                        <div class="accordion-item border-top my-4">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3.Are application fee waivers available?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the
+                                    collapse
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control
+                                    the
+                                    overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                    modify
+                                    any of this
+                                    with custom CSS or overriding our default variables. It's also worth noting that
+                                    just
+                                    about
+                                    any HTML
+                                    can go within the <code>.accordion-body</code>, though the transition does limit
+                                    overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- fourth accordion item -->
+                        <div class="accordion-item border-top my-4">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed py-4" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4.Are application fee waivers available?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the
+                                    collapse
+                                    plugin adds the appropriate classes that we use to style each element. These classes
+                                    control
+                                    the
+                                    overall appearance, as well as the showing and hiding via CSS transitions. You can
+                                    modify
+                                    any of this
+                                    with custom CSS or overriding our default variables. It's also worth noting that
+                                    just
+                                    about
+                                    any HTML
+                                    can go within the <code>.accordion-body</code>, though the transition does limit
+                                    overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Picture -->
+                <div class="col text-center">
+                    <img class="img-fluid" src="images/main-img/s-3 faq.png" alt="">
+                </div>
+            </div>
         </section>
         <!-- *main* Contact With US **S-4** -->
-        <section>
-            <div class="container mt-5  mb-5">
-            <h2 class="text-center">Contact With Us</h2>
-            <p class="text-center text-secondary">Connect with us today for personalized legal advice. Our dedicated team is available to answer your questions and guide you through the legal process.</p>
+        <section class="container pb-5 px-3 bg-secondary-subtle rounded">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center pt-5 pb-3">
+                        Contact With Us
+                    </h2>
+                    <p class="text-center mb-5">
+                        Connect with us today for personalized legal advice. Our dedicated team is available to answer your questions and guide you through the legal process.
+                    </p>
+                </div>
             </div>
-            <!-- Contact Grid: 3 cols -->
-           <div class="container">
-            <div class="row g-5">
-                <div class="col-12 col-md-6">
+            <div class="row ">
+                <div class="col-12 col-md-6 text-center justify-content bg-light bg-gradient mb-5">
                     <div class="row">
-                        <div class="col-12 col-md-6  p-5 border text-center bg-secondary">
-                            <img src="./images/main-img/s-4 p-1 location.png" alt="" class="img-fluid">
-                            <h4>Address</h4>
-                            <p>
-                                A108 Adam Street,<br>
-                                New York, NY 535022
-                            </p>
+                        <div class="col-12 col-md-6 p-4 border-bottom border-end">
+                            <img src="images/address.png" alt="">
+                            <h5 class="text-center pt-3">Address</h5>
+                            <p class="py-1 ">A108 Adam Street<br>
+                                New York, NY 535022</p>
 
                         </div>
-                        <div class="col-12 col-md-6  p-5 border text-center bg-secondary">
-                            <img src="./images/call.png" alt="" class="img-fluid">
-                            <h4>Call Us</h4>
-                            <p>
-                                +88 01750 00 00 00 <br>
-                                +88 01750 00 00 00
-                            </p>
+                        <div class="col-12 col-md-6 p-4 border-bottom">
+                            <img src="images/call.png" alt="">
+                            <h5 class="text-center pt-3">Call Us</h5>
+                            <p class="py-1 ">+88 01750 00 00 00<br>
+                                +88 01750 00 00 00</p>
+                        </div>
+                        <div class="col-12 col-md-6 p-4 border-end">
+                            <img src="images/email.png" alt="">
+                            <h5 class="text-center pt-3">Email Us</h5>
+                            <p class="py-1 ">info@gmail.com<br>
+                                info@gmail.com</p>
 
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-6 p-5 border text-center bg-secondary">
-                            <img src="./images/email.png" alt="" class="img-fluid">
-                            <h4>Email Us</h4>
-                            <p>
-                                info@gmail.com <br>
-                                info@gmail.com
-                            </p>
-
-                        </div>
-                        <div class="p-5 col-12 col-md-6 border text-center bg-secondary ">
-                            <img src="./images/time.png" alt="" class="img-fluid">
-                            <h4>Working Hours</h4>
-                            <p>
-                                Mon-Fri: 9AM to 5PM<br>
-                                Sunday: 9AM to 1 PM
-                            </p>
-
+                        <div class="col-12 col-md-6 p-4">
+                            <img src="images/time.png" alt="">
+                            <h5 class="text-center pt-3">Working Hours</h5>
+                            <p class="py-1">Mon-Fri: 9AM to 5PM<br>
+                                Sunday: 9AM to 1 PM</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6">
-                    <form action="">
-                        <input type="text" class="form-control bg-secondary " placeholder="Your Name">
-                        <input type="text" class="form-control my-3 bg-secondary" placeholder="Your Email">
-                        <input type="text" class="form-control my-3 bg-secondary" placeholder="Subject">
+                <div class="col-12 col-md-6 mb-5 px-5">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control bg-light bg-gradient py-3"
+                                    placeholder="Your Name">
+                            </div>
 
-                        <textarea name="" id="" cols="30" rows="9" type="text" class="form-control my-3 bg-secondary"
-                            placeholder="Your Message">
-
-                        </textarea>
-                        <button class="btn btn-primary w-100">Send Message</button>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <input type="email" class="form-control bg-light bg-gradient py-3"
+                                    placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <input type="email" class="form-control bg-light bg-gradient py-3"
+                                    placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <textarea class="form-control bg-light bg-gradient py-3" name="message" rows="3"
+                                    placeholder="Your Message" style="" spellcheck="false"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
-
             </div>
-
-
-           </div>
         </section>
 
 
@@ -528,7 +628,7 @@
                                 <input type="email" class="form-control" id="email" placeholder="Email Address">
                             </div>
                             <div class="col-4">
-                                <button type="submit" class="my_btn2 rounded "><i class="fa-regular fa-paper-plane"></i></button>
+                                <button type="submit" class="btn-primary2 rounded "><i class="fa-regular fa-paper-plane"></i></button>
                             </div>
                         </form>
                     </div>
