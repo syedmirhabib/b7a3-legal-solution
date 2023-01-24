@@ -12,11 +12,11 @@ p {
     font-family: 'Poppins', sans-serif !important;
 }
 
-.my_btn {
+.btn-primary {
     background-color: #B68C5A !important;
     color: white !important;
 }
-.my_btn2 {
+.btn-primary2 {
     background-color: #B68C5A !important;
     color: white !important;
     padding: 5px 10px!important;
